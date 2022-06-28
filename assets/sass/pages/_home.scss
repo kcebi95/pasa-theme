@@ -1,0 +1,197 @@
+@import "../utilities/variables";
+@import "../utilities/mixin";
+@import "../vendors/responsive";
+// Section Slider Style
+.slider {
+  overflow: hidden !important;
+  .carousel-item {
+    .new-width {
+      width: 100% !important;
+      height: 700px !important;
+      object-fit: cover !important;
+    }
+  }
+  .no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+// Section About Style
+.about {
+  .about-top__text {
+    hr {
+      @include hr;
+    }
+  }
+  &-left__img {
+    img {
+      width: 100% !important;
+      height: 30rem !important;
+      object-fit: cover !important;
+    }
+  }
+  .about-right__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .right-content__head {
+      margin-bottom: 2rem !important;
+      h1 {
+        font-size: 1.7rem !important;
+      }
+    }
+    .right-content__text {
+      font-size: 1rem !important;
+      color: $grey;
+      line-height: 1.5 !important;
+    }
+    .right-content__bottom {
+      font-size: 1rem !important;
+      line-height: 2.5 !important;
+      display: flex;
+      width: 60%;
+      flex-direction: column;
+      .bottom-text__p {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        i {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+// Section Services Style
+.services {
+  overflow: hidden !important;
+  .services-top__text {
+    width: 100% !important;
+    height: 10rem;
+    hr {
+      @include hr;
+    }
+  }
+  .service-box {
+    @include service-box;
+    &__text {
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+  }
+}
+// Location Services Style
+.location {
+  overflow: hidden !important;
+  .location-top__text {
+    width: 100% !important;
+    height: 5rem;
+    hr {
+      @include hr;
+    }
+  }
+  .location-box {
+    @include location-box;
+    &__text {
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+  }
+}
+// Referance Service Style
+.referances {
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  .referances-top__text {
+    width: 100% !important;
+    height: 5rem;
+    hr {
+      @include hr;
+    }
+  }
+  .owl-carousel {
+    .item {
+      height: 150px !important;
+      line-height: 150px;
+      border: 1px solid #eee;
+      padding: 0 12px;
+      display: block;
+      img {
+        vertical-align: middle;
+        width: inherit;
+        display: inline-block;
+        max-height: 110px;
+      }
+    }
+  }
+  .owl-dots {
+    button {
+      display: none !important;
+    }
+  }
+  .owl-theme {
+    .owl-nav {
+      .owl-prev {
+        background: $red;
+        padding: 0.5rem 1rem !important;
+        margin: 0.5rem !important;
+        span {
+          font-size: 1.7rem !important;
+        }
+        &:hover {
+          background: $red;
+        }
+      }
+      .owl-next {
+        background: $red;
+        padding: 0.5rem 1rem !important;
+        margin: 0.5rem !important;
+        span {
+          font-size: 1.7rem !important;
+        }
+        &:hover {
+          background: $red;
+        }
+      }
+    }
+  }
+}
+
+// back top top effect
+#button {
+  display: inline-block;
+  background-color: $red;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  i {
+    color: $white;
+    line-height: 50px;
+  }
+}
+#button:hover {
+  cursor: pointer;
+  background-color: $red;
+}
+#button:active {
+  background-color: $red;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+// extra style
+.margin-0 {
+}

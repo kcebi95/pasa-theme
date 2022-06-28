@@ -1,0 +1,32 @@
+@import "../utilities/variables";
+/* about page style css */
+.about-content {
+  width: 100%;
+  height: auto;
+  .accordion-item {
+    .accordion-button {
+      background-color: $red;
+      opacity: 0.9;
+      color: $white;
+      &:focus {
+        color: $white;
+      }
+    }
+    .accordion-body {
+      padding: 2rem !important;
+    }
+    .accordion-center__list {
+      li {
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+// Bread Crumb Styles
+.breadcrumb {
+  .breadcrumb-item {
+    a {
+      color: red !important;
+    }
+  }
+}

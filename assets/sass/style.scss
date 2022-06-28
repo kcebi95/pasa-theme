@@ -1,0 +1,26 @@
+// Custom
+@import 'base/reset';
+
+//Layout 
+@import 'layout/header';
+@import 'layout/footer';
+
+//pages 
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/services';
+@import 'pages/service-detail-1';
+@import 'pages/contact';
+
+
+// utilities 
+@import 'utilities/variables';
+@import 'utilities/mixin';
+
+// Vendors 
+@import 'vendors/responsive';
+
+
+
+
+
